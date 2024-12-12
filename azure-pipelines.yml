@@ -4,13 +4,8 @@
 # https://aka.ms/yaml
 
 trigger: none
-pr:
-  branches:
-    include:
-    - main
 
 pool: my-pc
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- checkout: self
